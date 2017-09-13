@@ -175,7 +175,7 @@ The most important prop is the `token` handler. There you can pass your callback
 
 The `Checkout` component uses constants from two files that you have already created. The last step for the frontend is to define these constants.
 
-First, in the *src/constants/server.js* file, you define the URL of your server. In production, when using the express default server, it will be `http://localhost:8080`. In production you may have a proper domain for your server.
+First, in the *src/constants/server.js* file, you define the URL of your server. In development, when using the express default server, it will be `http://localhost:8080`. In production you may have a proper domain for your server.
 
 {{< highlight javascript >}}
 const PAYMENT_SERVER_URL = process.env.NODE_ENV === 'production'
